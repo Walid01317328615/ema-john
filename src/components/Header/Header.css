@@ -1,0 +1,21 @@
+.header{
+    height: 80px;
+    background-color:black;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+nav.header a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: aliceblue;
+    font-weight: bold;
+}
+nav.header a:hover{
+    color: rgb(139, 113, 9);
+}
