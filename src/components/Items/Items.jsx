@@ -2,11 +2,11 @@ import React from 'react';
 import './Items.css'
 
 const Items = (props) => {
+    
     const { img, name, seller, ratings, price} = props.item;
+    const heandlerAdd = props.heandlerAdd;
 
-   console.log(props);
 
- 
     return (
         <div className='items'>
             <img src={img} alt="" />
@@ -17,7 +17,7 @@ const Items = (props) => {
             <p>Rating:{ratings} star</p>
             
            </div>
-           <button className='but-add'>Add to cart</button>
+           <button onClick={()=>heandlerAdd(props.item)} className='but-add'>Add to cart</button>
             
         </div>
     );
